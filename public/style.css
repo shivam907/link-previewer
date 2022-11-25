@@ -125,3 +125,11 @@ footer a {
   text-decoration: none;
   font-family: "Zen Dots", cursive;
 }
+
+.head {
+  position: absolute;
+  font-family: "Zen Dots";
+  font-size: 100%;
+  top: 2%;
+  left: 2%;
+}
