@@ -3,5 +3,5 @@ const fm = document.querySelector(".fm");
 
 console.log("hello");
 fm.addEventListener("submit", (el) => {
-  div.remove();
+  //   div.remove();
 });
