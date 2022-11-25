@@ -14,6 +14,7 @@ body {
   display: flex;
   /* flex-direction: column; */
   align-items: center;
+  position: relative;
   justify-content: center;
   /* height: 60vh; */
   /* width: 40vw; */
@@ -69,4 +70,9 @@ button:hover {
 input::placeholder {
   color: #f9f9f9;
   font-weight: 100;
+}
+
+.op {
+  opacity: 0;
+  position: absolute;
 }
