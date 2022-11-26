@@ -29,7 +29,7 @@ routers.get("/link-preview", async (req, res, next) => {
   } catch (err) {
     console.log(err.message);
     res.render("index.ejs", {
-      error: err.message.slice(16),
+      error: err.message.replace("link-preview-js", "We"),
     });
   }
 });
