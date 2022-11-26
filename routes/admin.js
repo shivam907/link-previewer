@@ -25,6 +25,7 @@ routers.get("/link-preview", async (req, res, next) => {
       title: data.title,
       description: data.description,
       img: data.images[0],
+      url: url,
     });
   } catch (err) {
     console.log(err.message);

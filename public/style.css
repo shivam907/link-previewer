@@ -155,3 +155,8 @@ flex-basis: 100%; */
   /* flex-grow: 1; */
   /* width: max-content; */
 }
+
+.link {
+  text-align: center;
+  font-weight: 800;
+}
