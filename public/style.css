@@ -143,6 +143,9 @@ footer a {
   width: 38vw;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+
   align-items: center;
   padding: 10px;
   border-radius: 10px;
