@@ -1,12 +1,6 @@
 const link = require("link-preview-js");
 const express = require("express");
 let title, des;
-function linkPreview(url) {
-  link.getLinkPreview(`${url}`).then((data) => {
-    title = data.title;
-    console.log(data);
-  });
-}
 
 // linkPreview("https://www.youtube.com/watch?v=LG1wb2JWoRQ&t=2s");
 
@@ -31,5 +25,9 @@ routers.get("/link-preview", (req, res, next) => {
       img: data.images[0],
     });
   });
+});
+
+routers.get("/random", (req, res) => {
+  res.render("random.ejs");
 });
 module.exports = routers;

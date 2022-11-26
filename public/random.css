@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&family=Raleway+Dots&family=Rubik:wght@400;500;600;700;800&family=Zen+Dots&display=swap");
+
+body {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* height: 100vh; */
+}
+
+div {
+  font-family: "Zen Dots";
+  font-size: 100px;
+  text-align: center;
+  background: url("blurry.svg") no-repeat center center;
+  background-size: 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
