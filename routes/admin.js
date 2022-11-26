@@ -8,6 +8,7 @@ const routers = express.Router();
 routers.get("/", (req, res, next) => {
   res.render("index", {
     title: "Hello saare duniya waalo",
+    error: undefined,
   });
 });
 let url;
@@ -17,14 +18,20 @@ routers.post("/", (req, res, next) => {
   //   console.log(url.title);
   res.redirect("/link-preview");
 });
-routers.get("/link-preview", (req, res, next) => {
-  link.getLinkPreview(`${url}`).then((data) => {
+routers.get("/link-preview", async (req, res, next) => {
+  try {
+    const data = await link.getLinkPreview(`${url}`);
     res.render("link", {
       title: data.title,
       description: data.description,
       img: data.images[0],
     });
-  });
+  } catch (err) {
+    console.log(err.message);
+    res.render("index.ejs", {
+      error: err.message.slice(16),
+    });
+  }
 });
 
 routers.get("/random", (req, res) => {

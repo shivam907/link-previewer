@@ -10,7 +10,11 @@
   </head>
   <body>
     <!-- <img src="blurry.svg" alt="" /> -->
+
     <h1 class="head">SyncU</h1>
+    <% if(error) { %>
+    <div class="error"><%= error %></div>
+    <% } %>
     <div class="div">
       <h1>Enter your Link</h1>
       <form class="fm" action="/" method="POST">
