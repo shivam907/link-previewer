@@ -134,6 +134,7 @@ footer a {
   position: absolute;
   font-family: "Zen Dots";
   font-size: 70%;
+  cursor: pointer;
   top: 2%;
   left: 2%;
 }
