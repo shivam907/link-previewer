@@ -163,4 +163,9 @@ flex-basis: 100%; */
 .link {
   text-align: center;
   font-weight: 800;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  font-style: italic;
 }
